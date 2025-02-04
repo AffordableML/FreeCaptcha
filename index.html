@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeCaptcha - Simple Bot Protection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #fff;
+        }
+        p {
+            line-height: 1.6;
+        }
+        form {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input[type="text"], 
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FreeCaptcha</h1>
+        <p>Simple and Effective Bot Protection for your Forms</p>
+    </header>
+    <main>
+        <section>
+            <h2>Why FreeCaptcha?</h2>
+            <p>FreeCaptcha is a lightweight JavaScript library designed to protect your web forms from automated bots. It's easy to integrate and provides a simple yet effective honeypot technique to reduce spam submissions.</p>
+        </section>
+        <section>
+            <h2>Features</h2>
+            <ul>
+                <li>Easy CDN integration</li>
+                <li>Invisible honeypot field</li>
+                <li>Lightweight and fast</li>
+                <li>Customizable options</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Get Started</h2>
+            <p>Include FreeCaptcha in your HTML:</p>
+            <pre><code>&lt;script src="free-captcha.js"&gt;&lt;/script&gt;</code></pre>
+            <p>And FreeCaptcha will automatically protect all forms on your page.</p>
+        </section>
+        <section>
+            <h2>Basic Usage</h2>
+            <p>To use FreeCaptcha, simply include the script in your HTML file before the closing &lt;body&gt; tag. FreeCaptcha will automatically attach to all forms on the page and add the honeypot protection. Try submitting this demo form:</p>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <script src="free-captcha.js"></script>
+</body>
+</html>
